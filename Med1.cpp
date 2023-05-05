@@ -31,20 +31,20 @@ void aiMove(Player aiPlayer) {
         }
     }
 
-    // Check if the player is about to win and block them
     Player opponent = (aiPlayer == PLAYER1) ? PLAYER2 : PLAYER1;
-    bool blockedOpponent = false;
     int x, y;
+    bool aiFoundWinningMove = false;
+
+    // Check if AI can win
     for (const auto& move : availableMoves) {
         // Temporarily make the move on the board
-        board[move.first][move.second] = opponent;
+        board[move.first][move.second] = aiPlayer;
 
-        // If the opponent would win with this move, block them
-        if (isWin(opponent)) {
+        // If the AI would win with this move, make the move
+        if (isWin(aiPlayer)) {
             x = move.first;
             y = move.second;
-            board[x][y] = aiPlayer;
-            blockedOpponent = true;
+            aiFoundWinningMove = true;
             break;
         }
 
@@ -52,14 +52,35 @@ void aiMove(Player aiPlayer) {
         board[move.first][move.second] = NONE;
     }
 
-    // If the AI didn't block the opponent, make a random move
-    if (!blockedOpponent) {
-        srand(static_cast<unsigned>(time(0)));
-        int randomIndex = rand() % availableMoves.size();
-        x = availableMoves[randomIndex].first;
-        y = availableMoves[randomIndex].second;
+    // If AI did not find a winning move, check if the player is about to win and block them
+    if (!aiFoundWinningMove) {
+        bool blockedOpponent = false;
+        for (const auto& move : availableMoves) {
+            // Temporarily make the move on the board
+            board[move.first][move.second] = opponent;
 
-        board[x][y] = aiPlayer;
+            // If the opponent would win with this move, block them
+            if (isWin(opponent)) {
+                x = move.first;
+                y = move.second;
+                board[x][y] = aiPlayer;
+                blockedOpponent = true;
+                break;
+            }
+
+            // Undo the temporary move
+            board[move.first][move.second] = NONE;
+        }
+
+        // If the AI didn't block the opponent, make a random move
+        if (!blockedOpponent) {
+            srand(static_cast<unsigned>(time(0)));
+            int randomIndex = rand() % availableMoves.size();
+            x = availableMoves[randomIndex].first;
+            y = availableMoves[randomIndex].second;
+
+            board[x][y] = aiPlayer;
+        }
     }
 
     // Draw the AI's move on the board
