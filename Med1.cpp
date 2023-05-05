@@ -115,7 +115,11 @@ void resetBoard() {
     drawBoard();
 }
 
+
+// game function
+int playerCount = 0, aicount=0, drawcount=0;
 bool playMed1() {
+    MessageBox(NULL, _T("Rules:\nBest 3 of 5\nFailed if #draw = 3!\nPlease DONT move the board window!"), _T("Tic-Tac-Toe"), MB_OK);
     initgraph(3 * unitSize, 3 * unitSize);
 
     setbkcolor(WHITE);
@@ -154,11 +158,14 @@ bool playMed1() {
                     drawO(x, y);
                 }
                 if (isWin(PLAYER1)) {
-                    MessageBox(NULL, _T("Player wins!"), _T("Tic-Tac-Toe"), MB_OK);
+                    MessageBox(NULL, _T("YOU win!"), _T("Tic-Tac-Toe"), MB_OK);
+                    playerCount++;
                     resetBoard();
+
                 }
                 else if (isWin(PLAYER2)) {
-                    MessageBox(NULL, _T("Player wins!"), _T("Tic-Tac-Toe"), MB_OK);
+                    MessageBox(NULL, _T("YOU win!"), _T("Tic-Tac-Toe"), MB_OK);
+                    playerCount++;
                     resetBoard();
                 }
                 else {
@@ -175,19 +182,33 @@ bool playMed1() {
 
                         if (isWin(aiplayer)) {
                             MessageBox(NULL, _T("AI wins!"), _T("Tic-Tac-Toe"), MB_OK);
+                            aicount++;
                             resetBoard();
                         }
                         else if (isBoardFull()) {
                             MessageBox(NULL, _T("It's a draw!"), _T("Tic-Tac-Toe"), MB_OK);
+                            drawcount++;
                             resetBoard();
                         }
                     }
                     else {
                         MessageBox(NULL, _T("It's a draw!"), _T("Tic-Tac-Toe"), MB_OK);
+                        drawcount++;
                         resetBoard();
                     }
                 }
             
+            }
+            if (aicount == 3) {
+                MessageBox(NULL, _T("YOU FAILED!"), _T("Tic-Tac-Toe"), MB_OK);
+                return false;
+            } else if (playerCount == 3){
+                MessageBox(NULL, _T("AI FAILED!"), _T("Tic-Tac-Toe"), MB_OK);
+                return true;
+            }
+            else if (drawcount == 3) {
+                MessageBox(NULL, _T("YOU FAILED!"), _T("Tic-Tac-Toe"), MB_OK);
+                return false;
             }
         }
 
