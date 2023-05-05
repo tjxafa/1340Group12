@@ -18,3 +18,9 @@ In 2057, AI has evolved the ability to think for itself and has become a threat 
 
 ## Compilation and execution instructions
 1.
+
+## Medium level game
+### Tic-tac-toc
+This is an implementation of the classic Tic-Tac-Toe game using C++. It uses the EasyX and c++ standard library. The game features a graphical user interface and an AI opponent for the player to compete against.
+#### Rules
+Players must win AI 3 times to pass this checkpoint, and if the board is full(draw) more than or equal to 3 times, or AI wins three games first, the player loses and AI wins
