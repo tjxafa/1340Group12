@@ -8,7 +8,7 @@
 
 using namespace std;
 
-bool Easy2() {
+bool playEasy2() {
     cout << "/**********************/\n";
     cout << "/*      THE FATE      */\n";
     cout << "/**********************/\n";
