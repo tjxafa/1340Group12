@@ -31,7 +31,9 @@ You may start from the esay level, then medium level, and finnally advanced leve
 4. conio.h
 
 ## Compilation and execution instructions
-1.
+Since our files Med1.cpp and Diff2.cpp depend on external library EasyX which only supports windows, we recommend to use Visual Studio, or add -leasyx when compile the main.cpp.
+
+However, our files Easy1.cpp, Easy2.cpp, Easy3.cpp, Easy4.cpp, and Diff1.cpp do not depends EasyX and thus can be compiled by linux. 
 
 
 ## Four Easy level games
