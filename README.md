@@ -8,10 +8,14 @@
 - Zhu Tianming
 
 ## Description:
-In 2057, AI has evolved the ability to think for itself and has become a threat to humanity. People will band together to fight the AI! The game is divided into three difficulties, the easy difficulty has three games, respectively are quick question quick answer, quick arithmetic and rock paper scissors. There is one game of medium difficulty, tic-tac-toe. Advanced difficulty has two games, namely Sudoku and aircraft war.
+In 2057, AI has evolved the ability to think for itself and has become a threat to humanity. People will band together to fight the AI! The game is divided into three difficulties, the easy difficulty has four games, respectively are guessing a number, quick arithmetic, memorizing game and rock paper scissors. There is one game of medium difficulty, tic-tac-toe. Advanced difficulty has two games, namely Sudoku and aircraft war. All the games are single player games.
 
 ## List of coding requirements:
-1.
+1. Random elements
+2. Data structures and dynamic memory for storing the ranking
+3. File input in Sudoku game
+4. Multiple files for different games
+5. Proper indentation and naming styles
 
 ## List of non-standard C/C++ libraries:
 1.
@@ -19,6 +23,13 @@ In 2057, AI has evolved the ability to think for itself and has become a threat 
 ## Compilation and execution instructions
 1.
 
+
+## Four Easy level games
+  The detailed info about these 4 games will be shown at the beginning of games.
+  Easy1: a simple guessing number.
+  Easy2: rock-paper-scissors.
+  Easy3: simple math calculation.
+  Easy4: memorizing game.
 ## Medium level game
 ### Tic-tac-toc
 This is an implementation of the classic Tic-Tac-Toe game using C++. It uses the EasyX and c++ standard library. The game features a graphical user interface and an AI opponent for the player to compete against.
