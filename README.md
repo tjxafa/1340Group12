@@ -26,10 +26,10 @@ In 2057, AI has evolved the ability to think for itself and has become a threat 
 
 ## Four Easy level games
   The detailed info and rules about these 4 games will be shown at the beginning of games.
-  Easy1: a simple guessing number.
-  Easy2: rock-paper-scissors.
-  Easy3: simple math calculation.
-  Easy4: memorizing game.
+  ### Easy1: a simple guessing game.
+  ### Easy2: rock-paper-scissors.
+  ### Easy3: simple math calculation.
+  ### Easy4: memorizing game.
 ## Medium level game
 ### Tic-tac-toc
 This is an implementation of the classic Tic-Tac-Toe game using C++. It uses the EasyX and c++ standard library. The game features a graphical user interface and an AI opponent for the player to compete against.
