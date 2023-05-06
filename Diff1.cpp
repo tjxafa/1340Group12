@@ -35,32 +35,7 @@ void printBoard(const vector<vector<int>>& board){
 
 }
 
-//the function that saves the data of players into txt file.
-void save_map_to_file(const map<string, double>& t) {
 
-    vector<pair<string, double>> vec(t.begin(), t.end());
-    sort(vec.begin(), vec.end(), [](const pair<string, double>& a, const pair<string, double>& b) {
-        return a.second < b.second;
-    });
-    ofstream fout("player.txt");
-    map<string, double>::iterator itr;
-    for (itr = t.begin(); itr != t.end(); itr++){
-        fout << (*itr).first << " " << (*itr).second << endl;
-    }
-
-}
-
-//the function that prints the player data.
-void printdata(const map<string, double>& t){
-    int count=1;
-    cout<<"************The Leaderboard************"<<endl;
-    map<string, double>::iterator itr;
-    for (itr = t.begin(); itr != t.end(); itr++){
-        cout << "No."<<count<<"  "<<(*itr).first << " " << (*itr).second <<" seconds"<<endl;
-        count++;
-    }
-    cout<<" "<<endl;
-}
 
 //the function that reads information from the txt file.
 map<string, double> load_map_from_file() {
@@ -92,18 +67,10 @@ int checkboard(const vector<vector<int>>& board){
 
 } 
 
-int playDiff1(){    //main function
-    string name;
-    clock_t start,end;
-    double timesec;
-    cout<<"*************welcome to sukudo world!*************"<<endl;
-    cout<<"Your name is : ";
-    cin>>name;
+int playDiff1(){    
     int blood=5;
 
-    srand(time(NULL)); 
     t=load_map_from_file();
-    printdata(t);
     int random_num = rand() % 8 + 1; 
 
     //randomly choose a board from 1-8.
@@ -129,7 +96,6 @@ int playDiff1(){    //main function
     while (file >> ans[n]) n++;
     file.close();
     printBoard(board);//print the board.
-    start = clock();
 
     while (checkboard(board)!=1){//check if the answer is correct.
         cout<<"The number of trial is "<<blood<<endl;
@@ -158,16 +124,8 @@ int playDiff1(){    //main function
 
     cout<<"Congradulations, You Win!!!";
     cout<<"Record Saved!";
-    end = clock();
     
     //stop the timer and record the time into the txt file.
-    timesec=double(end-start)/CLOCKS_PER_SEC;
-    if (t.count(name) > 0) {
-        if (t[name]>timesec) t[name]=timesec;
-    }
-    else t[name]=timesec;
-
-    save_map_to_file(t);
     return 1;
 
 }
