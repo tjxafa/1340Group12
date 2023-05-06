@@ -1,6 +1,13 @@
 #ifndef DIFF1_H
 #define DIFF1_H
-
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
+#include <map>
+#include <string>
+#include <algorithm>
 
 struct pos{
     int r,c;
