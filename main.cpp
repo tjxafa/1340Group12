@@ -92,13 +92,23 @@ while (!game_over) {
             else if (games[choice].difficulty == MEDIUM) points = 20;
             else if (games[choice].difficulty == HARD) points = 30;
 
+            player.score += points;
+            
+        } else {
+            games[choice].completed = true;
+
+            int points;
+            if (games[choice].difficulty == EASY) points = 10;
+            else if (games[choice].difficulty == MEDIUM) points = 20;
+            else if (games[choice].difficulty == HARD) points = 30;
             player.score -= points;
             if (player.score <= 0) {
                 cout << "Unfortunately, you failed to save humanity.\n";
                 game_over = true;
             }
-        } else {
+            else {
             cout << "You did not pass the task. Try again or choose another task.\n";
+            }
         }
     }
 
