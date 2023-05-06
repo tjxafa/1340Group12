@@ -10,7 +10,7 @@
 
 using namespace std;
 
-bool Easy4(){
+bool playEasy4(){
     srand(time(nullptr));
     string ai_list[6] = {"ChatGPT","Claude","YouChat","Poe","HebbiaAI"};
     int index = rand()%100 +1;
