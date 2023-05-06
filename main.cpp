@@ -83,40 +83,37 @@ while (!game_over) {
         game_over = true;
         cout << "You have given up. Humanity is lost.\n";
     } else {
-        choice--;  // Adjust for 0-based index
-        if (!games[choice].completed) { 
-        int result = games[choice].playGame();  // Call the mini-game function
-        cout << result <<endl;
-        if (result == 1) {  // CHANGE - Check if the result is 1 (success)
-            games[choice].completed = true;
+        choice--; // Adjust for 0-based index
+        if (!games[choice].completed) {
+            int result = games[choice].playGame(); // Call the mini-game function and assign the return value to result
 
-            int points;
-            if (games[choice].difficulty == EASY) points = 10;
-            else if (games[choice].difficulty == MEDIUM) points = 20;
-            else if (games[choice].difficulty == HARD) points = 30;
+            if (result == 1) {
+                games[choice].completed = true;
 
-            player.score += points;
-            cout << "Congratulations! You have successfully completed the task.\n"; // CHANGE - Add a success message
-            
+                int points;
+                if (games[choice].difficulty == EASY) points = 10;
+                else if (games[choice].difficulty == MEDIUM) points = 20;
+                else if (games[choice].difficulty == HARD) points = 30;
+
+                player.score += points;
+
+            } else {
+                int points;
+                if (games[choice].difficulty == EASY) points = 10;
+                else if (games[choice].difficulty == MEDIUM) points = 20;
+                else if (games[choice].difficulty == HARD) points = 30;
+                player.score -= points;
+                if (player.score <= 0) {
+                    cout << "Unfortunately, you failed to save humanity.\n";
+                    game_over = true;
+                }
+                else {
+                    cout << "You did not pass the task. Try again or choose another task.\n";
+                }
+            }
         } else {
-            
-
-            int points;
-            if (games[choice].difficulty == EASY) points = 10;
-            else if (games[choice].difficulty == MEDIUM) points = 20;
-            else if (games[choice].difficulty == HARD) points = 30;
-            player.score -= points;
-            if (player.score <= 0) {
-                cout << "Unfortunately, you failed to save humanity.\n";
-                game_over = true;
-            }
-            else {
-            cout << "You did not pass the task. Try again or choose another task.\n";
-            }
-        }}
-        else {
-        cout << "You have already completed this task. Please choose another one.\n";
-    }
+            cout << "You have already completed this task. Please choose another one.\n";
+        }
     }
 
     if (checkVictoryCondition(games)) {
