@@ -95,7 +95,7 @@ while (!game_over) {
             player.score += points;
             
         } else {
-            games[choice].completed = true;
+            
 
             int points;
             if (games[choice].difficulty == EASY) points = 10;
