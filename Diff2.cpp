@@ -360,7 +360,7 @@ bool playDiff2(){
 }
 
 
-int main() {
+int Diff2() {
 	initgraph(width,height, EW_NOMINIMIZE | EW_SHOWCONSOLE);//initialize easyX
 	bool living = true;
 	while (living) {
@@ -369,11 +369,6 @@ int main() {
 		ord++;
 		//end during playing
 		living = BeginPlay();
-		
-
 	}
-
-
-
 	return 0;
 }
