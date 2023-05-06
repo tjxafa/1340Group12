@@ -348,7 +348,15 @@ bool BeginPlay() {
 	return true;
 }
 
-
+//judge if earn score in main game
+bool playDiff2(){
+	if (his[ord] > 5) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
 
 
 int main() {
