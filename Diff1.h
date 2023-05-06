@@ -1,5 +1,5 @@
-#ifndef SUDOKU_H
-#define SUDOKU_H
+#ifndef DIFF1_H
+#define DIFF1_H
 
 #include <iostream>
 #include <fstream>
