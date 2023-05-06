@@ -8,7 +8,7 @@
 #include "Easy3.h"
 using namespace std;
 
-bool Easy3(){
+bool playEasy3(){
     srand(time(nullptr));
     int a = rand() %9 + 1;
     int b = rand() %10 + 5;
