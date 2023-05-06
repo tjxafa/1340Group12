@@ -86,7 +86,7 @@ while (!game_over) {
         choice--;  // Adjust for 0-based index
         if (!games[choice].completed) { 
         int result = games[choice].playGame();  // Call the mini-game function
-
+        cout << result <<endl;
         if (result == 1) {  // CHANGE - Check if the result is 1 (success)
             games[choice].completed = true;
 
