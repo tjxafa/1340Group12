@@ -11,7 +11,7 @@
 In 2057, AI has evolved the ability to think for itself and has become a threat to humanity. People will band together to fight the AI! The game is divided into three difficulties, the easy difficulty has four games, respectively are guessing a number, quick arithmetic, memorizing game and rock paper scissors. There is one game of medium difficulty, tic-tac-toe. Advanced difficulty has two games, namely Sudoku and aircraft war. All the games are single player games.
 
 ## List of coding requirements:
-1. Random elements
+1. Random elements in 4 easy level games
 2. Data structures and dynamic memory for storing the ranking
 3. File input in Sudoku game
 4. Multiple files for different games
