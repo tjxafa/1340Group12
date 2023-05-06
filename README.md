@@ -41,7 +41,7 @@ You may start from the esay level, then medium level, and finnally advanced leve
 ### Tic-tac-toc
 This is an implementation of the classic Tic-Tac-Toe game using C++. It uses the EasyX and c++ standard library. The game features a graphical user interface and an AI opponent for the player to compete against.
 
-Players must win AI 3 times to pass this checkpoint, and if the board is full(draw) more than or equal to 3 times, or AI wins three games first, the player loses and AI wins
+Players must win AI 3 times to pass this checkpoint, and if the board is full(draw) more than or equal to 10 times, or AI wins three games first, the player loses and AI wins
 ## Two Difficult level games
 ### Sudoku
 The borad would be provided, and fill in the blank in the board to let every row and collumn have number 1-9. The time taken to fininsh the game would be recorded and save to the leaderboard.
