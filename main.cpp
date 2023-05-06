@@ -55,12 +55,12 @@ cout << "Each task will consume some of your energy. You start with 100 energy p
 
 // Initialize mini-games
 vector<MiniGame> games = {
-{"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", playEasy1},
-{"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", playEasy2},
-{"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", playEasy3},
-{"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", playEasy4},
-{"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", playMed1},
-{"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", playDiff2},
+    {"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", playEasy1},
+    {"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", playEasy2},
+    {"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", playEasy3},
+    {"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", playEasy4},
+    {"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", playMed1},
+    {"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", playDiff2},
 };
 
 int size = games.size();
