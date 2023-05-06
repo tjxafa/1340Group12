@@ -1,7 +1,7 @@
 # 1340-G12
 
 ## Our group members:
-- Fu Jing
+- Fu Jing (Github: Horace564)
 - Sun Yisheng
 - Tang Jiaxuan (Github: tjxafa)
 - Wang Jianan
