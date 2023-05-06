@@ -55,14 +55,13 @@ cout << "Each task will consume some of your energy. You start with 100 energy p
 
 // Initialize mini-games
 vector<MiniGame> games;
-games.push_back(MiniGame{"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", (int(*)())playEasy1});
-games.push_back(MiniGame{"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", (int(*)())playEasy2});
-games.push_back(MiniGame{"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", (int(*)())playEasy3});
-games.push_back(MiniGame{"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", (int(*)())playEasy4});
-games.push_back(MiniGame{"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", (int(*)())playMed1});
-games.push_back(MiniGame{"Mind War", MEDIUM, false, "Delve deep into the Mechs' consciousness network to persuade some of them to join the human cause", (int(*)())playDiff1});
-games.push_back(MiniGame{"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", (int(*)())playDiff2});
-
+games.push_back(MiniGame{"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", playEasy1});
+games.push_back(MiniGame{"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", playEasy2});
+games.push_back(MiniGame{"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", playEasy3});
+games.push_back(MiniGame{"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", playEasy4});
+games.push_back(MiniGame{"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", playMed1});
+games.push_back(MiniGame{"Mind War", MEDIUM, false, "Delve deep into the Mechs' consciousness network to persuade some of them to join the human cause", playDiff1});
+games.push_back(MiniGame{"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", playDiff2});
 int size = games.size();
 int choice;
 
