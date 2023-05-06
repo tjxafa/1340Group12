@@ -4,7 +4,7 @@
 #include "Easy1.h"
 
 using namespace std;
-bool Easy1() {
+bool playEasy1() {
     srand(time(nullptr));
     int secret_number = rand() % 100 + 750;
     int guess = 0;
@@ -51,3 +51,4 @@ bool Easy1() {
     }
     return true;
 }
+ 
