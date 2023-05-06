@@ -3,7 +3,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <stdlib.h>
-#include <unistd.h>
+// #include <unistd.h>
+// Include unistd.h in linux, include Windows.h in windows
+#include <Windows.h>
 #include "Easy2.h"
 
 using namespace std;
@@ -33,7 +35,10 @@ bool playEasy2() {
         cout << "YOU CHOOSE A....";
         cin >> player_choose;
         cout<<"The RESULT IS......"<<endl;
-        sleep(1);
+        // sleep(1);
+        // sleep(1) is for linux
+        Sleep(1000);
+        // Sleep(1000) is for Windows
         switch (enemy_choose) {
             case 'R':
                 switch (player_choose) {
