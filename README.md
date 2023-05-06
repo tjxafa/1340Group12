@@ -3,7 +3,7 @@
 ## Our group members:
 - Fu Jing
 - Sun Yisheng
-- Tang Jiaxuan
+- Tang Jiaxuan (Github: tjxafa)
 - Wang Jianan
 - Zhu Tianming
 
