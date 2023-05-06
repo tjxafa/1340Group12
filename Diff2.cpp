@@ -42,7 +42,7 @@ void BeginUI() {
 	//word on main UI
 	LPCTSTR title = _T("War of Warplane");
 	LPCTSTR play = _T("Touch to Begin");
-	LPCTSTR LB = _T("Leaderboard");
+	LPCTSTR LB = _T("History");
 	LPCTSTR exit_b = _T("Exit");
 	//print title
 	outtextxy(width / 2 - textwidth(title) / 2 - 200, height / 5, title);
