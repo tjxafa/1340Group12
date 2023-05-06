@@ -4,7 +4,8 @@
 #include <ctime>
 #include <math.h>
 #include <stdlib.h>
-#include <unistd.h>
+// #include <unistd.h> for linux
+#include <Windows.h>
 #include "Easy3.h"
 using namespace std;
 
@@ -33,7 +34,8 @@ bool playEasy3(){
             c_ans = 2*a+b;
             cin>>p_ans;
             cout<<"Um......."<<endl;
-            sleep(1);
+            //sleep(1);
+            Sleep(1000);
             if (c_ans == p_ans) {
                 cout<<"Good Job!!";
                 cout<<"You are Right!!"<<endl;
@@ -47,7 +49,8 @@ bool playEasy3(){
             c_ans = pow((b-a),2)+b;
             cin>>p_ans;
             cout<<"Um......."<<endl;
-            sleep(1);
+            //sleep(1);
+            Sleep(1000);
             if (c_ans == p_ans) {
                 cout<<"Good Job!!";
                 cout<<"You are Right!!"<<endl;
@@ -61,7 +64,8 @@ bool playEasy3(){
             c_ans = (a+3*b-2*c)*2;
             cin>>p_ans;
             cout<<"Um......."<<endl;
-            sleep(1);
+            //sleep(1);
+            Sleep(1000);
             if (c_ans == p_ans) {
                 cout<<"Good Job!!";
                 cout<<"You are Right!!"<<endl;
@@ -70,13 +74,15 @@ bool playEasy3(){
             else cout<<"Oops...You are Wrong.."<<endl;
         }
     cout<<"Keep Going!!"<<endl;
-    sleep(0.5);
+    //sleep(0.5);
+    Sleep(500);
     cout<<"***Your Score: "<<total_score<<endl;
     cout<<endl;        
      a = rand() %9 + 1;
      b = rand() %10 + 5;
     }
-    sleep(1);
+    //sleep(1);
+    Sleep(1000);
     if (total_score > 4){
         cout<<"You have ultimately achieved victory!"<<endl;
         cout<<"Congratulations!!"<<endl;
