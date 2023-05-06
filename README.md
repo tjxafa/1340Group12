@@ -1,4 +1,4 @@
-# 1340-G4
+# 1340-G12
 
 ## Our group members:
 - Fu Jing
@@ -8,7 +8,7 @@
 - Zhu Tianming
 
 
-## Background setting
+## Background settings:
 In 2057, AI has evolved the ability to think for itself and has become a threat to humanity. People will band together to fight the AI!
 You, as reprentative of humanity, must pass multilple levles to beat the AI.
 
