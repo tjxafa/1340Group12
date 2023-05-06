@@ -33,14 +33,6 @@ You may start from the esay level, then medium level, and finnally advanced leve
 
 ## Four Easy level games
   The detailed info and rules about these 4 games will be shown at the beginning of games.
-  ### Easy1
-  a simple guessing game.
-  ### Easy2
-  rock-paper-scissors.
-  ### Easy3
-  simple math calculation.
-  ### Easy4
-  memorizing game.
   
 ## Medium level game
 ### Tic-tac-toc
