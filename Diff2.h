@@ -2,7 +2,7 @@
 #define DIFF2_H
 
 #include <iostream>
-#include <graphics.h>//easyX
+#include <graphics.h>
 #include <vector>
 using namespace std;
 
