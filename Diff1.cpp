@@ -6,7 +6,7 @@
 #include <map>
 #include <string>
 #include <algorithm>
-#include "sudoku.h"
+#include "Diff1.h"
 using namespace std;
 
 map<string,double> t;
