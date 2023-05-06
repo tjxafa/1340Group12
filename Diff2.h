@@ -1,5 +1,5 @@
-#ifndef PLANE_H
-#define PLANE_H
+#ifndef DIFF2_H
+#define DIFF2_H
 
 #include <iostream>
 #include <graphics.h>//easyX
