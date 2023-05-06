@@ -13,7 +13,7 @@ In 2057, AI has evolved the ability to think for itself and has become a threat 
 You, as reprentative of humanity, must pass multilple levles to beat the AI.
 
 ## Game Description:
-The game is divided into three difficulties, four games for the easy level, one game for the medium level, and two games for advanced level.  
+The game is divided into three difficulties, **four** games for the easy level, **one** game for the medium level, and **two** games for advanced level.  
 All the games are single player games.
 You may start from the esay level, then medium level, and finnally advanced level.
 
