@@ -4,7 +4,8 @@
 #include <ctime>
 #include <math.h>
 #include <map>
-#include <unistd.h>
+// #include <unistd.h> for linux
+#include <Windows.h>
 #include <stdlib.h>
 #include "Easy4.h"
 
@@ -37,7 +38,8 @@ bool playEasy4(){
         for(int i=0; i<data.size(); ++i){
             system("clear");
             cout<<"This AI........."<<endl;
-            sleep(1);
+            //sleep(1);
+            Sleep(1000);
             cout<<"***AI Name: "<<ai_list[i]<<endl;
             cout<<"***AI Index: "<<data[ai_list[i]]<<endl;
             cout<<"Do you memorize its index?"<<endl;
@@ -45,7 +47,8 @@ bool playEasy4(){
             cin>>Yes;
         }
         cout<<endl;
-        sleep(1);
+        //sleep(1);
+        Sleep(1000);
         cout<<"Now is your turn!"<<endl;
         cout<<"Enter \'Y\' if you are ready! ";
         cin>>Yes;
@@ -57,7 +60,8 @@ bool playEasy4(){
             cout<<"What is the power index of \""<<ai_list[i]<<"\"? ";
             cin>>p_ans;
             cout<<"Um........"<<endl;
-            sleep(1);
+            Sleep(1000);
+            //sleep(1);
             if (p_ans == data[ai_list[i]]){
                 cout<<"Great!! You are Right!!"<<endl;
                 score+=1;
@@ -69,7 +73,8 @@ bool playEasy4(){
             }
         //cout<<"Keep Going!"<<endl;
         }
-        sleep(1);
+        //sleep(1);
+        Sleep(1000);
         cout<<endl;
         if (score >= 3){
         cout<<"You have ultimately achieved victory!"<<endl;
