@@ -69,10 +69,12 @@ int choice;
 while (!game_over) {
     cout << "\nTasks:\n";
     for (int i = 0; i < size; i++) {
-        if (!games[i].completed) {
-            cout << i + 1 << ". " << games[i].name << endl;
-        }
+    cout << i + 1 << ". " << games[i].name;
+    if (games[i].completed) {
+        cout << " (Completed)";
     }
+    cout << endl;
+}
     cout << "0. Give up and let humanity perish\n";
     cout << "\nChoose a task to complete (0 to give up): ";
     cin >> choice;
@@ -82,6 +84,7 @@ while (!game_over) {
         cout << "You have given up. Humanity is lost.\n";
     } else {
         choice--;  // Adjust for 0-based index
+        if (!games[choice].completed) { 
         int result = games[choice].playGame();  // Call the mini-game function
 
         if (result == 1) {
@@ -109,7 +112,10 @@ while (!game_over) {
             else {
             cout << "You did not pass the task. Try again or choose another task.\n";
             }
-        }
+        }}
+        else {
+        cout << "You have already completed this task. Please choose another one.\n";
+    }
     }
 
     if (checkVictoryCondition(games)) {
