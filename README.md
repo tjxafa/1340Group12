@@ -25,7 +25,10 @@ You may start from the esay level, then medium level, and finnally advanced leve
 5. Proper indentation and naming styles
 
 ## List of non-standard C/C++ libraries:
-1.
+1.graphics.h
+2.Windows.h
+3.unistd.h
+4.conio.h
 
 ## Compilation and execution instructions
 1.
