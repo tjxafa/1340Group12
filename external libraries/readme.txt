@@ -1,3 +1,5 @@
+This is EasyX library
+
 [Versions that support MinGW]
 TDM-GCC version 4.8.1 and above, supporting 32-bit and 64-bit.
 
