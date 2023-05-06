@@ -43,8 +43,9 @@ void save_map_to_file(const map<string, double>& t) {
         return a.second < b.second;
     });
     ofstream fout("player.txt");
-    for (const auto& [key, value] : t) {
-        fout << key << " " << value << endl;
+    map<string, double>::iterator itr;
+    for (itr = t.begin(); itr != t.end(); itr++){
+        fout << (*itr).first << " " << (*itr).second << endl;
     }
 
 }
@@ -53,9 +54,9 @@ void save_map_to_file(const map<string, double>& t) {
 void printdata(const map<string, double>& t){
     int count=1;
     cout<<"************The Leaderboard************"<<endl;
-    for (const auto& [key, value] : t) {
-        cout<< "No."<<count<<"  "<<key << " " << value <<" seconds"<<endl;
-        count++;
+    map<string, double>::iterator itr;
+    for (itr = t.begin(); itr != t.end(); itr++){
+        cout << "No."<<count<<"  "<<(*itr).first << " " << (*itr).second <<" seconds"<<endl;
     }
     cout<<" "<<endl;
 }
