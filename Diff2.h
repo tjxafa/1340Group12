@@ -15,5 +15,6 @@ class Enemy;
 bool AddEnemy(vector<Enemy*> &se, IMAGE& gra_enemy);
 class Bullet;
 bool BeginPlay();
+bool playDiff2();
 
 #endif
