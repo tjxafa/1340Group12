@@ -87,7 +87,7 @@ while (!game_over) {
         if (!games[choice].completed) { 
         int result = games[choice].playGame();  // Call the mini-game function
 
-        if (result == 1) {
+        if (result == 1) {  // CHANGE - Check if the result is 1 (success)
             games[choice].completed = true;
 
             int points;
@@ -96,6 +96,7 @@ while (!game_over) {
             else if (games[choice].difficulty == HARD) points = 30;
 
             player.score += points;
+            cout << "Congratulations! You have successfully completed the task.\n"; // CHANGE - Add a success message
             
         } else {
             
