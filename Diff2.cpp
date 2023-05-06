@@ -1,6 +1,7 @@
 #include <iostream>
 #include <graphics.h>//easyX
 #include <vector>
+#include "Diff2.h"
 
 using namespace std;
 
