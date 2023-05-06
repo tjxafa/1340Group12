@@ -1,3 +1,25 @@
+[Versions that support MinGW]
+TDM-GCC version 4.8.1 and above, supporting 32-bit and 64-bit.
+
+[Compiler Versions Supported]
+IDEs using TDM-GCC 4.8.1 and above are supported. For example:
+● Code::Blocks 13.12 or later
+● DevCpp version 5.8.0 and above
+Also additionally supported are
+● DevCpp 5.4.0 GCC MinGW 4.7.2 (C/C++ programming environment for students in the 13th Blue Bridge Cup Competition)
+● C-Free 5.0 (built-in GCC MinGW 3.4.5)
+
+[File List]
+include header file
+lib32 32-bit library files
+lib64 64-bit library files
+lib-for-devcpp_5.4.0 only for DevCpp 5.4.0 MinGW 4.7.2 and C-Free 5.0
+
+[Installation method]
+Copy the header files in the include folder and the library files in the lib32/lib64 folder to the header files and library files folders of MinGW respectively, add the link option: -leasyx, and then compile.
+For detailed steps, please refer to: https://go.easyx.cn/easyx-for-mingw
+
+
 EasyX for MinGW
 ver：20220901
 ------------------------------------
