@@ -4,6 +4,7 @@
 #include <iostream>
 #include <graphics.h>//easyX
 #include <vector>
+using namespace std;
 
 bool Mousetouch(int x, int y, RECT& r);
 bool RectCrashRect(RECT& r1, RECT& r2);
