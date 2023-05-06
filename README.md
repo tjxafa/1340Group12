@@ -1,11 +1,11 @@
 # 1340-G12
 
 ## Our group members:
-- Fu Jing (Github: Horace564)
-- Sun Yisheng
+- Fu Jing (GitHub: Horace564)
+- Sun Yisheng(GitHub: sys040628)
 - Tang Jiaxuan (Github: tjxafa)
-- Wang Jianan
-- Zhu Tianming
+- Wang Jianan(GitHub: Jasper713)
+- Zhu Tianming(GitHub: Arendt-Zhu)
 
 
 ## Background settings:
