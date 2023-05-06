@@ -67,7 +67,8 @@ int checkboard(const vector<vector<int>>& board){
 
 } 
 
-int playDiff1(){    
+int playDiff1(){
+    cout<<"*******Welcome to Sudoku World!********"<<endl;
     int blood=5;
 
     t=load_map_from_file();
