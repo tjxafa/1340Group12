@@ -6,8 +6,7 @@
 #include "Easy3.h"
 #include "Easy4.h"
 #include "Med1.h"
-#include "Med2.h"
-#include "Med3.h"
+
 #include "Diff1.h"
 #include "Diff2.h"
 
@@ -61,8 +60,7 @@ vector<MiniGame> games = {
 {"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", playEasy3},
 {"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", playEasy4},
 {"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", playMed1},
-{"United Resistance", MEDIUM, false, "Unite resistance forces from around the globe to collectively fight against Mech domination", playMed2},
-{"Hostage Rescue", MEDIUM, false, "Locate and rescue captured human leaders, ensuring their safety", playMed3},
+
 {"Mind War", HARD, false, "Delve deep into the Mechs' consciousness network to persuade some of them to join the human cause", playDiff1},
 {"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", playDiff2},
 };
