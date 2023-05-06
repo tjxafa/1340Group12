@@ -93,7 +93,7 @@ int checkboard(const vector<vector<int>>& board){
 
 } 
 
-int main(){    //main function
+int playDiff1(){    //main function
     string name;
     clock_t start,end;
     double timesec;
