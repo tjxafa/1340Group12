@@ -54,14 +54,13 @@ cout << "Welcome, " << playerName << "! The world has been devastated by an unkn
 cout << "Each task will consume some of your energy. You start with 100 energy points, and if your energy is depleted, you will fail in your mission to save humanity.\n\n";
 
 // Initialize mini-games
-vector<MiniGame> games = {
-    {"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", playEasy1},
-    {"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", playEasy2},
-    {"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", playEasy3},
-    {"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", playEasy4},
-    {"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", playMed1},
-    {"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", playDiff2},
-};
+vector<MiniGame> games;
+games.push_back(MiniGame{"Communication Interference", EASY, false, "Re-establish the communication network disrupted by the Mechs", (int(*)())playEasy1});
+games.push_back(MiniGame{"Energy Crisis", EASY, false, "Restart the nuclear power plants controlled by the Mechs to restore power supply", (int(*)())playEasy2});
+games.push_back(MiniGame{"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", (int(*)())playEasy3});
+games.push_back(MiniGame{"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", (int(*)())playEasy4});
+games.push_back(MiniGame{"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", (int(*)())playMed1});
+games.push_back(MiniGame{"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", (int(*)())playDiff2});
 
 int size = games.size();
 int choice;
