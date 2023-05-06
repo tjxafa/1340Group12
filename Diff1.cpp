@@ -57,6 +57,7 @@ void printdata(const map<string, double>& t){
     map<string, double>::iterator itr;
     for (itr = t.begin(); itr != t.end(); itr++){
         cout << "No."<<count<<"  "<<(*itr).first << " " << (*itr).second <<" seconds"<<endl;
+        count++;
     }
     cout<<" "<<endl;
 }
