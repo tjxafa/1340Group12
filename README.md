@@ -38,5 +38,6 @@ Players must win AI 3 times to pass this checkpoint, and if the board is full(dr
 ## Two Difficult level games
 ### Sudoku
 The borad would be provided, and fill in the blank in the board to let every row and collumn have number 1-9. The time taken to fininsh the game would be recorded and save to the leaderboard.
+
 ###Plane war
 Use the mouse to control the plane to destroy as many enemy planes as possible. Scores earned will be recorded in the “History”
