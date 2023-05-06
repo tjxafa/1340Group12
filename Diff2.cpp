@@ -349,17 +349,6 @@ bool BeginPlay() {
 	return true;
 }
 
-//judge if earn score in main game
-bool playDiff2(){
-	if (his[ord] > 5) {
-		return true;
-	}
-	else {
-		return false;
-	}
-}
-
-
 int Diff2() {
 	initgraph(width,height, EW_NOMINIMIZE | EW_SHOWCONSOLE);//initialize easyX
 	bool living = true;
@@ -371,4 +360,15 @@ int Diff2() {
 		living = BeginPlay();
 	}
 	return 0;
+}
+
+//judge if earn score in main game
+bool playDiff2(){
+	Diff2();
+	if (his[ord] > 5) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
