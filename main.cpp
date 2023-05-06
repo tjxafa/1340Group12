@@ -7,7 +7,7 @@
 #include "Easy4.h"
 #include "Med1.h"
 
-
+#include "Diff1.h"
 #include "Diff2.h"
 
 using namespace std;
@@ -60,6 +60,7 @@ games.push_back(MiniGame{"Energy Crisis", EASY, false, "Restart the nuclear powe
 games.push_back(MiniGame{"Virus Invasion", EASY, false, "Eliminate the malware implanted by the Mechs to protect critical information systems", (int(*)())playEasy3});
 games.push_back(MiniGame{"Tactical Stealth", EASY, false, "Infiltrate the Mech base to gather intelligence on their plans", (int(*)())playEasy4});
 games.push_back(MiniGame{"Counterattack", MEDIUM, false, "Organize and execute a carefully planned counterattack to destroy the Mechs' strategic fortress", (int(*)())playMed1});
+games.push_back(MiniGame{"Mind War", MEDIUM, false, "Delve deep into the Mechs' consciousness network to persuade some of them to join the human cause", (int(*)())playDiff1});
 games.push_back(MiniGame{"The Ultimate Battle", HARD, false, "Launch an unprecedented large-scale battle to completely destroy the Mechs' command center", (int(*)())playDiff2});
 
 int size = games.size();
